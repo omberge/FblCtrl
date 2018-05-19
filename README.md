@@ -11,9 +11,8 @@ The design is general VHDL modules (not specific to any technology), tested on X
   - Future is to use [UVVM](https://github.com/UVVM/UVVM) and Modelsim
 
 ## Code
-- All technology specific code (such as multipliers, Softcore microcontrollers, etc.) must have a wrapper. 
+- All technology specific code (such as multipliers, Softcore microcontrollers, etc.) must have a wrapper.
 - All Components have a specific folder structure:
-
 ```
 - design component
   - src
@@ -21,5 +20,18 @@ The design is general VHDL modules (not specific to any technology), tested on X
   - scripts
   - doc
 ```
+- All Code follow strict formatting:
+```VHDL
+entity spiflash is
+  port(
+    i_Clk                           : in    std_logic;
+    i_Rst                           : in    std_logic;
+    ...
+    o_FlashMosi                     : out   std_logic
+  );
+end spiflash;
+```
+
+
 
 ## END 
