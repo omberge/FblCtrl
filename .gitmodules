@@ -1,3 +1,6 @@
 [submodule "UVVM"]
 	path = UVVM
 	url = https://github.com/UVVM/UVVM.git
+[submodule "uart"]
+	path = uart
+	url = https://github.com/omberge/uart.git
